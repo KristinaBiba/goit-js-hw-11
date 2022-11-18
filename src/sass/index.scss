@@ -1,2 +1,64 @@
-@import './common';
-@import './example';
+body {
+  font-family: 'Acme', sans-serif;
+}
+.search-form {
+  position: relative;
+  outline: 1px solid black;
+  background-color: darkblue;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.search-form input {
+  width: 200px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 20px;
+}
+.search-form button {
+  position: absolute;
+  left: 53.7%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+// .gallery a {
+//   text-decoration: none;
+//   color: inherit;
+// }
+.photo-card {
+  box-shadow: 4px 4px 4px gray;
+  flex-basis: calc((100% - 60px) / 4);
+  text-decoration: none;
+  color: inherit;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+}
+.info-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 54px;
+  justify-content: center;
+}
+.info-item div {
+  width: 50%;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
